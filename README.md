@@ -248,6 +248,14 @@ var AWS = require('aws-sdk');
 AWS.config.httpOptions = {timeout: 5000};
 ```
 
+### Mocking the AWS SDK for testing
+
+For convenience the aws sdk has been stubbed out and exposed via:
+
+```js
+var AWSstub = require('s3-upload-stream/lib/AWSstub')
+```
+
 ### Installation
 
 ```
